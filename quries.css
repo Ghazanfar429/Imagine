@@ -1,0 +1,132 @@
+@media (max-width: 74.25em) {
+  .container {
+    max-width: 95rem;
+  }
+  header {
+    gap: 15rem;
+  }
+
+  .img-ctn {
+    max-width: 35rem;
+  }
+  .feature-details {
+    max-width: 30rem;
+    padding: 4rem 1rem;
+    font-size: 1.5rem;
+  }
+
+  .feedback {
+    gap: 4rem;
+  }
+
+  .illustration {
+    max-width: 50rem;
+  }
+
+  .text-area h1 {
+    margin-bottom: 1.5rem;
+  }
+
+  .feedback-info {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+
+  .cmt {
+    padding: 1rem 2rem;
+  }
+
+  .user-cmt {
+    margin-top: 2rem;
+  }
+
+  .team-details {
+    max-width: 30rem;
+  }
+}
+
+@media (max-width: 59.3em) {
+  .container {
+    max-width: 75rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  ul {
+    display: none;
+  }
+
+  header {
+    max-width: 75rem;
+    gap: 55rem;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .home {
+    flex-direction: column-reverse;
+  }
+
+  .img-ctn {
+    max-width: 60rem;
+  }
+
+  .home-heading {
+    display: none;
+  }
+
+  .features {
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .feature-details {
+    padding: 4rem 1rem 2rem 1rem;
+  }
+
+  .feedback {
+    flex-direction: column;
+  }
+  .illustration {
+    max-width: 60rem;
+  }
+  .about {
+    flex-direction: column-reverse;
+  }
+  .list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .team-details {
+    max-width: 50rem;
+  }
+
+  .team {
+    flex-direction: column;
+  }
+  .team-mem {
+    max-width: 60rem;
+  }
+
+  .intro {
+    text-align: center;
+  }
+}
+
+@media (max-width: 43.75em) {
+  header {
+    gap: 45rem;
+  }
+}
+
+@media (max-width: 40.625em) {
+  .features {
+    justify-content: center;
+  }
+  .feature-details {
+    max-width: 50rem;
+  }
+}

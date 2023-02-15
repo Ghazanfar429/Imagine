@@ -1,0 +1,559 @@
+/*---- General-Setting ----  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Heebo", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 2rem 2rem 2rem;
+}
+
+.btn {
+  background-color: #4285f4;
+  color: white;
+  padding: 1.5rem 3rem;
+  border: none;
+  border-radius: 50rem;
+  font-size: 1.6rem;
+}
+
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 20px -5px #4285f4;
+  transition: 0.3s all ease;
+  transform: translatey(-5px);
+}
+
+/*---- Header-Setting ----  */
+
+header {
+  max-width: 120rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40rem;
+  position: fixed;
+  background-color: aliceblue;
+  padding: 2rem 5rem 2rem 0;
+  z-index: 1;
+}
+
+.logo {
+  font-size: 2.8rem;
+  font-weight: 400;
+}
+
+.logo span {
+  color: #4285f4;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.menu {
+  display: none;
+  color: black;
+  font-size: 3rem;
+}
+
+.menu:hover {
+  color: #4285f4;
+}
+
+ul {
+  list-style-type: none;
+}
+.h-li {
+  display: block;
+  float: left;
+  position: relative;
+}
+
+li a {
+  padding: 1rem 2rem;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+
+li a:hover {
+  color: #4285f4;
+  cursor: pointer;
+}
+
+.subli-1 {
+  display: none;
+  position: absolute;
+  text-align: left;
+  border-top: solid 3px #4285f4;
+  background-color: white;
+  box-shadow: 2px 2px 15px 3px #888;
+  float: none;
+  width: 200px;
+}
+
+.h-li:hover .subli-1 {
+  display: block;
+}
+
+.subli-2 {
+  display: none;
+  position: absolute;
+  top: 9rem;
+  left: 20rem;
+  width: 200px;
+  background-color: white;
+  float: none;
+  box-shadow: 2px 2px 15px 3px #888;
+  border-top: solid 3px #4285f4;
+}
+
+.h-sli:hover .subli-2 {
+  display: block;
+}
+
+/*---- Home-Setting ----  */
+
+.home {
+  display: flex;
+  gap: 6rem;
+  align-items: center;
+  justify-content: space-between;
+  margin: 16rem 0;
+}
+
+.home-heading {
+  max-width: 50rem;
+  line-height: 1.2;
+}
+
+.home-heading h1 {
+  font-family: "Heebo";
+  text-transform: capitalize;
+  font-size: 5.2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.home-text {
+  line-height: 1.7;
+  color: #888;
+  margin-bottom: 5rem;
+}
+
+.img-ctn {
+  max-width: 50rem;
+}
+
+.img {
+  max-width: 100%;
+}
+
+/*---- Features-Setting ----  */
+
+.features-container {
+  margin-bottom: 20rem;
+  padding-top: 8rem;
+}
+
+.features-heading {
+  text-align: center;
+}
+
+.features-heading h1 {
+  font-size: 4.2rem;
+  font-weight: 400;
+  letter-spacing: -1.25px;
+}
+
+.features-heading p {
+  color: #888;
+  font-size: 2rem;
+  line-height: 1.8;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  color: #888;
+  line-height: 1.8;
+  color: black;
+}
+
+.feature-details {
+  max-width: 37rem;
+  height: fit-content;
+  border-radius: 1rem;
+  text-align: center;
+  background-color: rgb(240, 240, 240);
+  padding: 4rem;
+  margin-top: 10rem;
+  position: relative;
+}
+
+.qwerty {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.flogo {
+  color: white;
+  background-color: #4285f4;
+  font-size: 4rem;
+  padding: 1rem;
+  clip-path: circle();
+}
+
+.feature-details h6 {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.f-para {
+  margin-bottom: 3rem;
+  color: #888;
+}
+
+.feature-details a {
+  text-decoration: none;
+  color: #4285f4;
+}
+
+.feature-details:hover {
+  background-color: #4285f4;
+  color: white;
+  transform: translateY(-10px);
+  transition: all 0.5s ease;
+}
+
+.feature-details:hover .flogo {
+  background-color: white;
+  color: #4285f4;
+  transition: all 0.5s ease;
+}
+
+.feature-details:hover .f-para {
+  color: white;
+}
+
+.feature-details:hover .lnk {
+  color: white;
+}
+/*---- Feedback-Setting ----  */
+
+.feedback {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 6rem;
+}
+
+.illustration {
+  max-width: 70rem;
+}
+.illustration img {
+  max-width: 100%;
+}
+
+.text-area {
+  align-self: center;
+}
+
+.text-area h1 {
+  font-size: 4.2rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 4rem;
+}
+
+.feedback-info {
+  color: #888;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+}
+
+.cmt {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-left: solid #4285f4 1rem;
+  border-radius: 5px;
+  padding: 2rem;
+  box-shadow: 5px 5px 15px 5px #f1f3f5, 0 -5px 15px 5px #f1f3f5;
+}
+
+figcaption {
+  display: flex;
+  align-items: center;
+}
+
+.user {
+  max-width: 10rem;
+  clip-path: circle();
+}
+
+.user-cmt {
+  margin-top: 3rem;
+  color: #888;
+  font-style: italic;
+  padding-left: 1.5rem;
+}
+
+/*---- About-Setting ----  */
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f3f5;
+  margin: 20rem auto 0 auto;
+  padding: 5rem 0 2rem 0;
+  font-size: 4.2rem;
+  font-family: "Heebo";
+  font-weight: 500;
+}
+.about {
+  max-width: 124rem;
+  display: flex;
+  gap: 10rem;
+  margin-top: 10rem;
+  padding: 0 2rem;
+}
+.about-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-heading {
+  font-size: 3.2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.about-info {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #888;
+  margin-bottom: 3rem;
+  line-height: 1.8;
+}
+
+.list {
+  margin-bottom: 5rem;
+}
+
+.l-bt {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  font-size: 1.8rem;
+  color: #888;
+  font-weight: 400;
+  line-height: 2.5;
+}
+
+.icon {
+  color: green;
+}
+
+/*---- Team-Setting ----  */
+
+.team-container {
+  margin-top: 5rem;
+  padding-top: 10rem;
+}
+.team-heading {
+  text-align: center;
+}
+
+.team-heading h1 {
+  font-size: 4.2rem;
+  font-weight: 400;
+  letter-spacing: -1.25px;
+}
+
+.team-heading p {
+  color: #888;
+  font-size: 2rem;
+  line-height: 1.8;
+}
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  color: #888;
+  line-height: 1.8;
+  color: black;
+}
+
+.team-details {
+  max-width: 37rem;
+  height: fit-content;
+  border-radius: 1rem;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.mem {
+  max-width: 100%;
+  max-height: auto;
+}
+
+.team-mem {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.overlay {
+  position: absolute;
+  height: 60px;
+  background-color: #4285f4;
+  width: 37rem;
+  padding: 1rem 0;
+  top: 186.78px;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  display: none;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.team-mem:hover .overlay {
+  display: flex;
+}
+
+.mem-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.overlay a:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 2rem 0;
+}
+
+.post p {
+  text-transform: capitalize;
+  color: #4285f4;
+  font-size: 1.4rem;
+}
+
+.intro {
+  text-align: left;
+}
+
+/*---- Contact-Setting ----  */
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10rem auto 0 auto;
+  font-family: "Heebo";
+  font-weight: 400;
+  font-size: 2rem;
+  padding-top: 10rem;
+}
+
+.customer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.customer-details {
+  display: flex;
+  justify-content: center;
+  gap: 5.5rem;
+}
+
+label {
+  font-family: "Heebo";
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #888;
+}
+
+input {
+  padding: 1rem;
+  font-size: 2rem;
+  border: solid black 2px;
+}
+
+textarea {
+  padding: 1rem;
+  font-size: 2rem;
+  border: solid black 2px;
+  margin-bottom: 2rem;
+}
+
+/*---- Footer-Setting ----  */
+
+.icons {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem 0;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Heebo";
+  color: #888;
+  gap: 5rem;
+}
+
+.icons a {
+  text-decoration: none;
+  color: #4285f4;
+  cursor: pointer;
+}
+
+.icons a:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
+
+.media {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  cursor: pointer;
+}
